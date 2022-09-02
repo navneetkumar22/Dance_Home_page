@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F5F2F0;
+}
+
+div {
+    display: block;
+}
+
+/* Left Section */
+
+.hero-image {
+    position: absolute;
+    width: 36%;
+    top: 0;
+    left: 0;
+    bottom: -15px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.logo {
+    position: absolute;
+    top: 60px;
+    left: 80px;
+    z-index: 1;
+}
+
+.logo img {
+    height: 35px;
+}
+
+
+/* Right Section */
+
+nav {
+    margin-top: 50px;
+    /* border: 2px solid green; */
+    width: 64%;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+hr.top-line {
+    margin-left: 20px;
+    border-top: 2px solid black;
+    width: 280px;
+}
+
+.navbar {
+    margin-right: 60px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+.nav-item {
+    list-style: none;
+    font-family: 'Mulish', sans-serif;
+    color: gray;
+}
+
+.nav-item:first-child {
+    color: black;
+    font-weight: bold;
+}
+
+
+/* Creativity Section */
+
+.creativity {
+    position: absolute;
+    top: 100px;
+    right: 60px;
+    width: 58%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.heading h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 7rem;
+    line-height: 100px;
+    letter-spacing: 3px;
+}
+
+span.crea {
+    -webkit-text-stroke: 1px #7e7e7e;
+    color: transparent;
+}
+
+span.tivity {
+    margin-left: 150px;
+    color: #333333;
+}
+
+.ingredient {
+    align-self: flex-end;
+    margin-right: 60px;
+}
+
+.ingredient h3 {
+    font-family: 'Merriweather', serif;
+    font-size: 27px;
+    color: gray;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 34px;
+}
+
+.icon-image img {
+    width: 20px;
+    height: 20px;
+}
+
+.button {
+    position: absolute;
+    right: 60px;
+    top: 48%;
+}
+
+.package {
+    padding: 15px 48px;
+    color: white;
+    background-color: #333333;
+    font-size: large;
+    /* font-weight: bold; */
+    border: none;
+}
+
+
+/* Dancing Section */
+
+.photography {
+    width: 55%;
+    height: 40%;
+    position: absolute;
+    bottom: 0;
+    right: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.vertical-line {
+    border-left: 2px solid gray;
+    height: 245px;
+    position: absolute;
+    bottom: -12px;
+    right: 60%;
+}
+
+.service-item {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: gray;
+    padding-left: 20px;
+    font-family: 'Mulish', sans-serif;
+}
+
+.item1 {
+    font-size: 22px;
+    color: black;
+}
+
+ul li::marker {
+    font-size: 35px;
+}
+
+ul li.item1::marker {
+    font-size: 36px;
+}
+
+.dance {
+    position: absolute;
+    bottom: -20px;
+    margin-left: 32%;
+    width: 55%;
+}
+
+.dance h2 {
+    font-size: 80px;
+    margin-bottom: -30px;
+}
+
+.dance p {
+    font-size: 19px;
+    margin-bottom: 20px;
+    color: gray;
+    font-family: 'Mulish', sans-serif;
+}
+
+.dance img {
+    width: 95%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.arrow img {
+    height: 100px;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .logo {
+        top: 2.5rem;
+        left: 2.5rem;
+    }
+
+    .logo img {
+        height: 2rem;
+    }
+
+    .hero-image {
+        width: 100%;
+        height: 100%;
+        /* padding: 0 2rem; */
+        top: 35rem;
+        left: 0;
+        bottom: auto;
+    }
+
+    .hero-image img {
+        width: 100%;
+    }
+
+    /* Right Section */
+
+    .navbar {
+        display: none;
+    }
+
+    hr.top-line {
+        margin: 1rem;
+        width: 50vw;
+    }
+
+    /* Creativity Section */
+
+    .creativity {
+        padding: 2.5rem;
+        top: 5rem;
+        right: 0;
+        width: 100%;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .heading h1 {
+        font-size: 15vw;
+        line-height: 5rem;
+        letter-spacing: 3px;
+    }
+
+    .ingredient {
+        align-self: flex-start;
+        margin-right: 0;
+    }
+
+    .social-icons {
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 70%;
+    }
+
+    .button {
+        right: 6rem;
+        top: 122rem;
+        padding-bottom: 5rem;
+    }
+
+
+    /* Dancing Section */
+
+    .photography {
+        padding: 2.5rem 0;
+        top: 73.5rem;
+        right: 2.5rem;
+        width: 100%;
+        height: 50rem;
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    .vertical-line {
+        top: 76.2rem;
+        right: 81.4%;
+    }
+
+    .dance {
+        padding: 0 2.5rem;
+        bottom: 5rem;
+        margin-left: 5rem;
+        width: 100%;
+        height: auto;
+    }
+
+    .dance h2 {
+        margin-top: 2rem;
+    }
+
+    .dance img {
+        width: 100%;
+        height: auto;
+    }
+
+    .arrow img {
+        display: none;
+    }
+}
